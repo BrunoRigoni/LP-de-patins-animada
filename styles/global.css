@@ -49,16 +49,22 @@ a {
   text-decoration: none;
 }
 
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
 
-.mobile {
-  --max-width: 80em;
-  width: min(var(--max-width), 100%);
-  
 }
 
 
+
+
 @media (min-width: 20em ) and (max-width: 79em) {
-.mobile {
-   
-  }
+:root {
+--text-sm: .75rem;
+--text-base: 1rem;
+--text-lg: 1.5rem;
+--text-xl: 2rem;
+}
+
+
 }
