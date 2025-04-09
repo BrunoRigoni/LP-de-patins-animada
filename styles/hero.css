@@ -126,12 +126,11 @@ section.hero {
 
 @media (min-width: 20em ) and (max-width: 79em) {
   section.hero {
-    max-width: 20rem;
     width: 100%;
-    padding: 0;
+    padding-block: 1.5rem;
   
     & h1{ 
-      max-width: 100%;
+      max-width: 20em;
 
       & div {
         display: inline-block;
