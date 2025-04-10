@@ -112,11 +112,18 @@ section.gallery {
 
 @media (min-width: 20em) and (max-width: 79em) {
   section.gallery {
-    .content {
+    padding: 1.5rem 1.5rem;
+    gap: 1.5rem;
+
+
+    & header {
+      padding: 0;
+    }
+
+     & .content {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-
 
 
       & figure {
@@ -131,8 +138,6 @@ section.gallery {
         }
 
       }
-
-
     }
 
   }
