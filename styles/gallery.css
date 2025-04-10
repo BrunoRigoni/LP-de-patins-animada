@@ -36,33 +36,37 @@ section.gallery {
       animation-range: 100px 300px;
 
       &[data-delay] {
-        animation-range: 150px 350px ;
+        animation-range: 150px 350px;
       }
-      
-      & > img {
+
+      &>img {
         height: 25rem;
         object-fit: cover;
         transition: scale 500ms;
       }
-      
+
       &:hover {
         &>img {
           scale: 1.1;
         }
-        
+
         & figcaption {
           transform: translateY(0);
         }
       }
+
       &:nth-child(1) {
         grid-area: A;
       }
+
       &:nth-child(2) {
         grid-area: B;
       }
+
       &:nth-child(3) {
         grid-area: C;
       }
+
       &:nth-child(4) {
         grid-area: D;
       }
@@ -86,11 +90,8 @@ section.gallery {
     transform: translateY(100%);
     transition: transform 500ms;
 
-    background: linear-gradient(
-    to top
-    rgb(0 0 0 / 0.64),
-    rgb(0 0 0 / 0)
-    );
+    background: linear-gradient(to top rgb(0 0 0 / 0.64),
+        rgb(0 0 0 / 0));
 
     &>img {
       width: 2rem;
@@ -107,4 +108,35 @@ section.gallery {
     opacity: 0;
     transform: translateY(100%);
   }
+}
+
+@media (min-width: 20em) and (max-width: 79em) {
+  section.gallery {
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+
+
+      & figure {
+        animation-range: 100px 350px;
+
+        &[data-delay] {
+          animation-range: 100px 300px;
+        }
+
+        &>img {
+          height: 16rem;
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+
 }
